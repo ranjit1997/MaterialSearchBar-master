@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BigFragment"
+    tools:ignore="ExtraText">
+
+    // BIG SALE350
+
+
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="314dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#D50000"
+            android:fontFamily="@string/action_search"
+            android:text="BIG SALE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="112dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:contentDescription="@string/action_settings"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/laptop"
+                android:layout_width="112dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Products Info"
+                android:background="@drawable/big_stabbackground"
+                android:textSize="12dp"
+                android:layout_gravity="bottom"
+                android:padding="5dp"
+                android:textColor="@color/transparentBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="112dp"
+            app:cardCornerRadius="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="120dp">
+
+
+            <ImageView
+                android:contentDescription="@string/action_settings"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/tablat"
+                android:layout_width="112dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="Products Info"
+                android:background="@drawable/big_stabbackground"
+                android:textSize="12dp"
+                android:layout_gravity="bottom"
+                android:padding="5dp"
+                android:textColor="@color/transparentBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="112dp"
+            app:cardCornerRadius="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_height="59dp">
+
+            <TextView
+                android:text="Products Name"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="112dp"
+            app:cardCornerRadius="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="66dp"
+            android:layout_height="59dp">
+
+            <TextView
+                android:text="Products Name"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+   
+
+</FrameLayout>

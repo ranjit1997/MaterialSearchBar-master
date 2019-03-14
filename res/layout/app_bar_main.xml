@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.mancj.example.MainActivity"
+    tools:ignore="ExtraText"
+    android:weightSum="9">
+
+    // SEARCH ACTION BAR0
+        <RelativeLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                style="@style/MaterialSearchBarLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:mt_navIconEnabled="true"
+                app:mt_placeholder="Google Play" />
+        </RelativeLayout>
+
+    // SCROLL ALL ITEM55
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ExtraText">
+
+            <RelativeLayout
+                android:background="@color/transparentBlack"
+                android:layout_width="match_parent"
+                android:layout_height="201dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="201dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="170dp"
+                    app:centered="true"
+                    app:fillColor="#4c68f5"
+                    android:isScrollContainer="true"
+                    app:pageColor="#fff"
+                    app:snap="false" />
+            </RelativeLayout>
+            // ALL CATEGORIES188
+            <RelativeLayout
+                android:background="@drawable/layoutback"
+                android:layout_marginTop="188dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ExtraText">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    tools:ignore="RtlCompat">
+
+                    <LinearLayout
+                        android:id="@+id/a"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/tvlist"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/itemlist" />
+
+                            <TextView
+                                android:id="@+id/tvallcat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvlist"
+                                android:layout_centerHorizontal="true"
+                                android:text="All Categories"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/IVhot"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="9dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/hot" />
+                            <TextView
+                                android:id="@+id/tvsucity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Hot Categories"
+                                android:layout_below="@+id/IVhot"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/IVuser"
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="4dp"
+                                android:src="@drawable/usre_zone" />
+                            <TextView
+                                android:id="@+id/tvRoom"
+                                android:layout_below="@+id/IVuser"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="User Zone"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/IVready"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ready_to" />
+
+                            <TextView
+                                android:id="@+id/tvdry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="Ready to Ship"
+                                android:layout_below="@id/IVready"
+                                android:textColor="#000"
+                                android:textSize="12dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                // HOT SALE100
+                <fragment
+                    android:name="com.mancj.example.FirstFragment"
+                    android:id="@+id/fragment1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true">
+
+                </fragment>
+
+                // BIG SALE350
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 tools:ignore="ExtraText">
+
+                 <fragment
+                     android:name="com.mancj.example.BigFragment"
+                     android:id="@+id/fragment2"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentLeft="true">
+
+                 </fragment>
+
+                 <fragment
+                     android:name="com.mancj.example.SelectedFragment"
+                     android:id="@+id/fragment3"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentLeft="true">
+
+                 </fragment>
+
+                 // WEEKLY DEALS745
+
+                 <fragment
+                     android:name="com.mancj.example.WeeklyFragment"
+                     android:id="@+id/fragment4"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentLeft="true">
+
+                 </fragment>
+                 // ELECTRONICS AND ENTERTAINMENT988
+                 <fragment
+                     android:name="com.mancj.example.ElectronicsFragment"
+                     android:id="@+id/fragment5"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentLeft="true">
+
+                 </fragment>
+                 // BRAND ZONE1260
+                 <fragment
+                     android:name="com.mancj.example.BrandFragment"
+                     android:id="@+id/fragment6"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentLeft="true">
+
+                 </fragment>
+                 // TRADE SHOWS1540
+                 <fragment
+                     android:name="com.mancj.example.TrandFragment"
+                     android:id="@+id/fragment7"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentLeft="true">
+
+                 </fragment>
+                 // JUST FOR YOU1790
+                 <RelativeLayout
+                     android:background="#F9FBE7"
+                     android:layout_alignParentTop="true"
+                     android:layout_marginTop="1790dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <RelativeLayout
+                         android:layout_alignParentTop="true"
+                         android:layout_marginTop="8dp"
+                         android:layout_alignParentLeft="true"
+                         android:layout_marginLeft="20dp"
+                         android:elevation="8dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+                         <TextView
+                             android:textSize="18dp"
+                             android:textStyle="bold"
+                             android:textColor="#D50000"
+                             android:fontFamily="@string/action_search"
+                             android:text="JUST FOR YOU"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_alignParentTop="true"
+                         android:layout_marginTop="50dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <android.support.v7.widget.RecyclerView
+                             android:id="@+id/recycler_view"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:scrollbars="vertical" />
+
+                     </RelativeLayout>
+                 </RelativeLayout>
+             </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/content_main" />
+
+</RelativeLayout>
